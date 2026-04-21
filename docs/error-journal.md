@@ -65,7 +65,7 @@ confirms the `policy drop` is effective on incoming external traffic.
 **Symptom.**
 
 ```
-[WARNING]: Unable to parse /home/will/inventory.ini as an inventory source
+[WARNING]: Unable to parse /home/deploy/inventory.ini as an inventory source
 [WARNING]: No inventory was parsed, only implicit localhost is available
 ```
 

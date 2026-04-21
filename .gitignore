@@ -1,0 +1,33 @@
+# ----- Secrets (never commit) -------------------------------------
+# Real inventory and variables — use the .example.* versions for reference
+part2-ansible/inventory.ini
+part2-ansible/group_vars/all.yml
+part2-ansible/**/vault.yml
+*.pem
+*.key
+id_rsa
+id_ed25519
+ansible-vault-password
+
+# ----- Ansible artefacts ------------------------------------------
+*.retry
+.ansible/
+ansible_collections/
+part2-ansible/**/*.pyc
+play_output*.log
+
+# ----- OS / editor -----------------------------------------------
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.idea/
+.vscode/
+.claude/
+*~
+
+# ----- Python ----------------------------------------------------
+__pycache__/
+*.pyc
+venv/
+.venv/
