@@ -1,0 +1,21 @@
+---
+# Global variables — example
+#
+# Copy this file to group_vars/all.yml and replace the placeholder values.
+# In production, encrypt the real file with `ansible-vault encrypt`.
+
+# Database
+db_name: wikidb
+db_user: wikiuser
+db_password: "CHANGE_ME_strong_db_password"
+db_host: "10.0.0.20"
+
+# MediaWiki
+mw_version: "1.41.1"
+mw_archive: "mediawiki-{{ mw_version }}.tar.gz"
+mw_url: "https://releases.wikimedia.org/mediawiki/1.41/{{ mw_archive }}"
+mw_install_dir: /var/www/html/mediawiki
+mw_site_name: "My Wiki"
+mw_admin_user: WikiAdmin
+mw_admin_password: "CHANGE_ME_strong_admin_password"
+mw_server: "http://10.0.0.10"
